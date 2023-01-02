@@ -9,6 +9,8 @@ const CommonButton = ({
   shadow = false,
   width = 120,
   height = 40,
+  border = "none",
+  ...rest
 }) => {
   const style = {
     background: bgColor,
@@ -16,10 +18,11 @@ const CommonButton = ({
     fontSize: fontSize,
     width: width,
     height: height,
+    border: `2px solid ${border}`,
   };
 
   return (
-    <button className={shadow && "shadow-button"} style={style}>
+    <button className={shadow && "shadow-button"} {...rest} style={style}>
       {icon || ""}
       {label}
     </button>

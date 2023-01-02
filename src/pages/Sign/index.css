@@ -5,27 +5,77 @@ form {
   flex-direction: column;
   margin: 3rem auto;
   width: 40%;
-  border-radius: 18px;
+  border-radius: 22px;
   height: 540px;
   background: #fff;
+
+  -webkit-box-shadow: 6px 6px 22px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 6px 22px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 6px 22px -1px rgba(0, 0, 0, 0.75);
 }
 
-form label {
+.form-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-title h1 {
+  font-size: 42px;
+}
+
+.form-title .icon {
+  color: #eb1d36;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
   display: flex;
   flex-direction: column;
   margin: 1rem;
   width: 100%;
 }
 
-form label input {
-  height: 35px;
-  border-radius: 8px;
-  border: none;
-  transition: all .3s ease-in-out;
-  padding: 1rem;
+label p {
+  font-size: 18px;
 }
 
-form label input:focus {
+input {
+  height: 35px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem;
+  background: #eeee;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid grey;
+}
+
+input::placeholder {
+  color: grey;
+}
+
+input:focus {
   outline: 2px solid #eb1d36;
   transform: scale(1.05);
+  border: none;
+}
+
+input:hover {
+  transform: scale(1.05);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
