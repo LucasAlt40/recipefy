@@ -1,0 +1,53 @@
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #eeee;
+}
+
+header nav ul {
+  font-size: 18px;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 1rem;
+}
+
+header span {
+  color: #eb1d36;
+}
+
+li {
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.2);
+}
+
+a:hover {
+  color: #eb1d36;
+}
+
+a#active {
+  color: #eb1d36;
+}
+
+a {
+  color: black;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.sign-login {
+  display: flex;
+  align-items: center;
+}
+
+.sign-login h3 {
+  margin: 1rem;
+}

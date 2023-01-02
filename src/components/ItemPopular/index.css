@@ -1,0 +1,28 @@
+.card-item-popular img {
+  width: 180px;
+  height: 100px;
+}
+
+.card-item-popular {
+  width: 350px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+  padding: 1rem;
+
+  background: #393e46;
+
+  border-radius: 80% 80% 0 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.card-item-popular h2 {
+  color: white;
+  margin: 1rem;
+}
+
+.card-item-popular:hover {
+  height: 330px;
+}
