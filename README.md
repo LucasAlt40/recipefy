@@ -1,2 +1,2 @@
-# recipefy
+# Recipefy
 A menu application 
