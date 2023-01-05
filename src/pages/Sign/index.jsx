@@ -9,6 +9,7 @@ import CommonButton from "../../components/CommonButton";
 
 import "./index.css";
 import { Link } from "react-router-dom";
+import CommonInput from "../../components/CommonInput";
 
 const Sign = () => {
   return (
@@ -36,25 +37,19 @@ const Sign = () => {
               <p>Welcome back! Please enter your details</p>
             </div>
             <div className="fields">
-              <div className="input-container">
-                <label htmlFor="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="email@example.com"
+                <CommonInput
+                  type={"email"}
+                  label={"Email"}
+                  placeholder={"email@example.com"}
+                  htmlFor="email"
                 />
-              </div>
-              <div className="input-container">
-                <label htmlFor="password">Password</label>
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="a secret word"
+                <CommonInput
+                  type={"password"}
+                  label={"Password"}
+                  placeholder={"a secret word"}
+                  htmlFor="password"
                 />
                 <p>Forgot password</p>
-              </div>
             </div>
             <div className="buttons">
               <CommonButton

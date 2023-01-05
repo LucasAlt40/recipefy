@@ -1,0 +1,36 @@
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+label {
+  font-size: 20px;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem;
+  background: #eeee;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid grey;
+}
+
+input::placeholder {
+  color: grey;
+}
+
+input:focus {
+  outline: 2px solid #eb1d36;
+  transform: scale(1.05);
+  border: none;
+}
+
+input:hover {
+  transform: scale(1.05);
+}
