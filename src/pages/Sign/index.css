@@ -1,14 +1,51 @@
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.sign-content {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.img-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.img-content img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  filter: brightness(50%);
+}
+
+.img-content h1 {
+  font-size: 88px;
+  width: 45%;
+  position: absolute;
+  color: #FFF;
+}
+
+.img-content h1 span {
+  color: #eb1d36;
+}
+
+
 form {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  margin: 3rem auto;
-  width: 40%;
-  border-radius: 22px;
-  height: 540px;
+  width: 50%;
+  height: 100%;
   background: #fff;
-
+  
   -webkit-box-shadow: 6px 6px 22px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 6px 6px 22px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 6px 6px 22px -1px rgba(0, 0, 0, 0.75);
@@ -23,7 +60,15 @@ form {
 }
 
 .form-title h1 {
-  font-size: 42px;
+  font-size: 38px;
+}
+
+.logo h1 {
+  font-size: 58px;
+}
+
+.logo span {
+  color: #eb1d36;
 }
 
 .form-title .icon {
@@ -35,21 +80,28 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-label {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
   width: 100%;
 }
 
-label p {
-  font-size: 18px;
+.input-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.input-container p {
+  align-self: flex-end;
+  color: grey;
+}
+
+label {
+  font-size: 20px;
 }
 
 input {
-  height: 35px;
+  height: 50px;
+  width: 100%;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
   padding: 1rem;
@@ -78,4 +130,51 @@ input:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons button img {
+  height: 30px;
+  width: 30px;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.buttons button img.custom-icon-style {
+  height: 36px;
+}
+
+.sign-externals-account {
+  display: flex;
+}
+
+.sign-externals-account button {
+  margin: 1rem;
+}
+
+.alternatives {
+  margin: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+hr {
+  margin: 1rem;
+  width: 30%;
+  height: 1px;
+  background: grey;
+}
+
+.dont-have-account span {
+  font-weight: bold;
+  font-size: 18px;
 }

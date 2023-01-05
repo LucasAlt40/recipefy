@@ -7,7 +7,7 @@ img.bgImg {
   height: 100vh;
   object-fit: cover;
   opacity: 90%;
-  filter: blur(3px);
+  filter: blur(3px) brightness(50%);
 }
 
 main {
@@ -24,7 +24,8 @@ main {
 
 .info-text {
   margin-left: 5rem;
-  width: 30%;
+  width: 40%;
+  position: relative;
 }
 
 .info-text h1 {
@@ -37,10 +38,7 @@ main {
 }
 
 .info-buttons button {
-  width: 180px;
-  height: 50px;
   margin: 1rem;
-  
 }
 
 .recipes-popular {
@@ -49,6 +47,4 @@ main {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-
-  position: absolute;
 }

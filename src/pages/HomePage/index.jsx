@@ -23,6 +23,7 @@ const HomePage = () => {
                 fontColor={"#FFF"}
                 fontSize={"16px"}
                 shadow={true}
+                width={160}
               />
               <CommonButton
                 label={"Add a recipe"}
@@ -30,6 +31,7 @@ const HomePage = () => {
                 fontColor={"#000"}
                 fontSize={"16px"}
                 shadow={true}
+                width={160}
               />
             </div>
           </div>
