@@ -49,7 +49,7 @@ const Sign = () => {
                   placeholder={"a secret word"}
                   htmlFor="password"
                 />
-                <p>Forgot password</p>
+                <p>Forgot password?</p>
             </div>
             <div className="buttons">
               <CommonButton
