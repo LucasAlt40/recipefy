@@ -48,6 +48,6 @@ header.header-default .sign-login {
   align-items: center;
 }
 
-header.header-default.sign-login h3 {
+header.header-default .sign-login h3 {
   margin: 1rem;
 }
