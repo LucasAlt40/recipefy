@@ -22,7 +22,7 @@ const CommonButton = ({
   };
 
   return (
-    <button className={shadow && "shadow-button"} {...rest} style={style}>
+    <button className={`common-button ${(shadow && "shadow-button")}`} {...rest} style={style}>
       {icon || ""}
       {label}
     </button>

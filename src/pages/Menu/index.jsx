@@ -1,10 +1,11 @@
 import Header from "../../components/Header";
+import MenuHeader from "../../components/MenuHeader";
 
 const Menu = () => {
   return (
     <>
       <main>
-        <Header isAuthenticated={true}/>
+        <MenuHeader />
       </main>
     </>
   );

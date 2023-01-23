@@ -1,4 +1,4 @@
-button {
+.common-button {
   border-radius: 18px;
   border: none;
   cursor: pointer;
@@ -6,11 +6,11 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.common-button:hover {
   transform: scale(1.1);
 }
 
-button .icon {
+.common-button .icon {
   margin-right: 1rem;
 }
 

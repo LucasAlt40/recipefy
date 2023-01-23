@@ -1,4 +1,4 @@
-header {
+header.header-default {
   width: 100%;
   height: 100px;
   display: flex;
@@ -7,69 +7,47 @@ header {
   background: #fff;
 }
 
-header nav ul {
+header.header-default nav ul {
   font-size: 18px;
   display: flex;
 }
 
-header nav ul li {
+header.header-default nav ul li {
   margin: 1rem;
 }
 
-header span {
+header.header-default span {
   color: #eb1d36;
 }
 
-li {
+header.header-default li {
   list-style: none;
   transition: all 0.3s ease-in-out;
 }
 
-li:hover {
+header.header-default li:hover {
   transform: scale(1.2);
 }
 
-a:hover {
+header.header-default a:hover {
   color: #eb1d36;
 }
 
-a#active {
+header.header-default a#active {
   color: #eb1d36;
 }
 
-a {
+header.header-default a {
   color: black;
   font-size: 22px;
   text-decoration: none;
 }
 
-.sign-login {
+header.header-default .sign-login {
   display: flex;
   align-items: center;
 }
 
-.sign-login h3 {
+header.header-default.sign-login h3 {
   margin: 1rem;
-}
-
-.sign-login .avatar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.sign-login .avatar p {
-  margin: 1rem;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.sign-login .avatar img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 100%;
-  -webkit-box-shadow: 3px 4px 12px -2px rgba(102, 102, 102, 1);
-  -moz-box-shadow: 3px 4px 12px -2px rgba(102, 102, 102, 1);
-  box-shadow: 3px 4px 12px -2px rgba(102, 102, 102, 1);
 }

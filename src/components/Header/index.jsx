@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 
 import "./index.css";
 
-const Header = ({ isAuthenticated = false }) => {
+const Header = () => {
   return (
-    <header>
+    <header className="header-default">
       <h1>
         Recipe<span>fy</span>
       </h1>
@@ -34,28 +34,18 @@ const Header = ({ isAuthenticated = false }) => {
       </nav>
 
       <div className="sign-login">
-        {!isAuthenticated && (
-          <>
-            <Link to="/sign">
-              <CommonButton
-                label={"Sign in"}
-                bgColor={"#eb1d36"}
-                fontColor={"#FFF"}
-                fontSize={"14px"}
-                icon={<FontAwesomeIcon className="icon" icon={faUser} />}
-              />
-            </Link>
-            <h3>
-              BR <span> | </span> EN
-            </h3>
-          </>
-        )}
-        {isAuthenticated && (
-          <div className="avatar">
-            <img src={profileIcon} alt="profile icon" />
-            <p>Diana Prince</p>
-          </div>
-        )}
+        <Link to="/sign">
+          <CommonButton
+            label={"Sign in"}
+            bgColor={"#eb1d36"}
+            fontColor={"#FFF"}
+            fontSize={"14px"}
+            icon={<FontAwesomeIcon className="icon" icon={faUser} />}
+          />
+        </Link>
+        <h3>
+          BR <span> | </span> EN
+        </h3>
       </div>
     </header>
   );

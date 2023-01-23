@@ -5,11 +5,11 @@
   margin: 1rem;
 }
 
-label {
+.input-container label {
   font-size: 20px;
 }
 
-input {
+.input-container input {
   height: 50px;
   width: 100%;
   border-radius: 8px;
@@ -21,16 +21,16 @@ input {
   border: 1px solid grey;
 }
 
-input::placeholder {
+.input-container input::placeholder {
   color: grey;
 }
 
-input:focus {
+.input-container input:focus {
   outline: 2px solid #eb1d36;
   transform: scale(1.05);
   border: none;
 }
 
-input:hover {
+.input-container input:hover {
   transform: scale(1.05);
 }
