@@ -1,0 +1,43 @@
+.lateral-menu-container {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  height: 100vh;
+  align-items: center;
+}
+
+.lateral-menu-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.lateral-menu-content h2 {
+  font-size: 22px;
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+
+.lateral-menu-content p {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 18px;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.lateral-menu-content .icon {
+  margin: 1rem;
+}
+
+.lateral-menu-content p:hover {
+  background: black;
+  color: white;
+}

@@ -10,3 +10,8 @@
 body {
   background: #EEEE;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
