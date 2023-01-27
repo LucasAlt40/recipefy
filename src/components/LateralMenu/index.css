@@ -4,6 +4,10 @@
   width: 240px;
   height: 100%;
   align-items: center;
+  position: fixed;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
 }
 
 .lateral-menu-content {
@@ -15,10 +19,12 @@
 }
 
 .lateral-menu-content h2 {
+  align-self: flex-start;
   font-size: 22px;
   font-weight: 300;
   font-style: italic;
   opacity: 0.5;
+  margin-left: 3rem;
   margin-bottom: 1rem;
 }
 

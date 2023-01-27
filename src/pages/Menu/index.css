@@ -1,6 +1,28 @@
+.menu-container {
+  width: 87%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 240px;
+  margin-top: 1rem;
+}
+
 .category-container {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   margin-top: 3rem;
+}
+
+.recipes-container {
+  width: 100%;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipes-container h1 {
+  margin-left: 5rem;
+  font-size: 42px;
 }

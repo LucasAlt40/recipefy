@@ -8,18 +8,15 @@ const Menu = () => {
   return (
     <>
       <MenuHeader />
-      <main
-        style={{
-          width: "100%",
-          height: "100%",
-          display: "flex",
-        }}
-      >
-        <LateralMenu />
+      <LateralMenu />
+      <main className="menu-container">
         <div className="category-container">
           <CategoryCard label={"Pizza"} />
           <CategoryCard label={"Pizza"} />
           <CategoryCard label={"Pizza"} />
+        </div>
+        <div className="recipes-container">
+          <h1>Daily best recipes</h1>
         </div>
       </main>
     </>
