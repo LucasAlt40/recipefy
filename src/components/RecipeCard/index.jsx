@@ -1,12 +1,13 @@
+import "./index.css";
+
+import plate from "../../assets/plate.png";
+
 const RecipeCard = () => {
   return (
     <div className="recipe-card-container">
-      <img src={""} alt="recipe image" />
+      <img src={plate} alt="recipe image" />
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet suscipit
-        dolor veniam non ratione accusantium iure perspiciatis ipsam est nobis,
-        vel necessitatibus corporis facere ab dolorem, maiores itaque minima
-        corrupti?
+        Spaghetti wih tomato sauce and onion
       </p>
     </div>
   );

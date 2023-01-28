@@ -1,0 +1,19 @@
+.recipe-card-container {
+  width: 40%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  border-radius: 22px;
+  background: paleturquoise;
+}
+
+.recipe-card-container p {
+  font-size: 22px;
+  text-align: center;
+}
+
+.recipe-card-container img {
+  width: 250px;
+}
