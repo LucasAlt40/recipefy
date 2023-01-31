@@ -30,5 +30,6 @@
 .recipes-list {
   margin-left: 5rem;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
