@@ -22,6 +22,15 @@ const Menu = () => {
             <RecipeCard />
             <RecipeCard />
             <RecipeCard />
+            <RecipeCard />
+            <RecipeCard />
+            <RecipeCard />
+            <RecipeCard />
+            <RecipeCard />
+            <RecipeCard />
+            <RecipeCard />
+            <RecipeCard />
+            <RecipeCard />
           </div>
         </div>
       </main>

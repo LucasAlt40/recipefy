@@ -1,19 +1,27 @@
 .recipe-card-container {
-  width: 40%;
-  height: 100px;
+  width: 25%;
+  height: 140px;
   display: flex;
   align-items: center;
   padding: 1rem;
   position: relative;
   border-radius: 22px;
-  background: paleturquoise;
+  background: #E6D0AF;
+  margin: 3rem;
+  cursor: pointer;
+
+  transition: all .3s ease-in-out;
 }
 
 .recipe-card-container p {
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
 }
 
 .recipe-card-container img {
-  width: 250px;
+  width: 180px;
+}
+
+.recipe-card-container:hover {
+  transform: scale(1.1);
 }
