@@ -7,6 +7,7 @@ import Sign from "./pages/Sign";
 
 import "./main.css";
 import Menu from "./pages/Menu";
+import Recipe from "./pages/Recipe";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/menu",
     element: <Menu />,
+  },
+  {
+    path: "/recipe/:id",
+    element: <Recipe />,
   },
 ]);
 
