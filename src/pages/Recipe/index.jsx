@@ -1,8 +1,31 @@
 import LateralMenu from "../../components/LateralMenu";
 import MenuHeader from "../../components/MenuHeader";
 import CommonButton from "../../components/CommonButton";
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const Recipe = () => {
+  const { id } = useParams();
+  const [recipe, setRecipe] = useState({});
+
+  useEffect(() => {
+    const options = {
+      method: "GET",
+      url: `http://localhost:8080/recipe/${id}`,
+    };
+
+    axios
+      .request(options)
+      .then((response) => {
+        setRecipe(response.data);
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
+
   return (
     <>
       <MenuHeader />
@@ -13,8 +36,8 @@ const Recipe = () => {
       >
         <div className="recipe-content">
           <img src="" alt="recipe-photo" />
-          <h3>1 Porção</h3>
-          <h3>30 Minutos</h3>
+          <h3>{recipe?.amount} Porção</h3>
+          <h3>{recipe?.timeToDo}</h3>
 
           <CommonButton
             label={"Save Recipe"}
@@ -34,33 +57,22 @@ const Recipe = () => {
         </div>
 
         <div className="recipe-content">
-          <h1>Macarrão ao molho pesto</h1>
+          <h1>{recipe?.title}</h1>
           <hr />
 
           <div className="ingredients-list">
-            <h2>Ingredients List</h2>
+            <h2>Ingredients</h2>
             <ul>
-              <li>
-                <input type="checkbox" name="ingredient" id="ingredient" />{" "}
-                <label htmlFor="ingredient">100g de macarrão</label>
-              </li>
-              <li>
-                <input type="checkbox" name="ingredient" id="ingredient" />
-                <label htmlFor="ingredient">100g de macarrão</label>
-              </li>
-              <li>
-                <input type="checkbox" name="ingredient" id="ingredient" />
-                <label htmlFor="ingredient">100g de macarrão</label>
-              </li>
-              <li>
-                <input type="checkbox" name="ingredient" id="ingredient" />
-                <label htmlFor="ingredient">100g de macarrão</label>
-              </li>
-              <li>
-                <input type="checkbox" name="ingredient" id="ingredient" />
-                <label htmlFor="ingredient">100g de macarrão</label>
-              </li>
+              <div
+                dangerouslySetInnerHTML={{ __html: recipe?.ingredients }}
+              ></div>
             </ul>
+          </div>
+        </div>
+        <div className="recipe-content">
+          <div className="how-to-do">
+            <h2>How to do</h2>
+            <div dangerouslySetInnerHTML={{ __html: recipe?.howToDo }}></div>
           </div>
         </div>
       </main>

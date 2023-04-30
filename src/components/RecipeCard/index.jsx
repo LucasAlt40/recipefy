@@ -1,15 +1,14 @@
 import "./index.css";
 
 import plate from "../../assets/plate.png";
+import { Link } from "react-router-dom";
 
-const RecipeCard = () => {
+const RecipeCard = ({ recipe, ...rest }) => {
   return (
-    <div className="recipe-card-container">
+    <Link to={`/recipe/${recipe?.id}`} className="recipe-card-container">
       <img src={plate} alt="recipe image" />
-      <p>
-        Spaghetti with tomato sauce and onion
-      </p>
-    </div>
+      <p>{recipe?.title}</p>
+    </Link>
   );
 };
 
