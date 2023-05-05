@@ -1,2 +1,2 @@
 # Recipefy
-A menu application 
+Front end menu application
