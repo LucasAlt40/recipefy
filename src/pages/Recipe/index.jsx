@@ -4,6 +4,16 @@ import CommonButton from "../../components/CommonButton";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import plate from "../../assets/plate.png";
+
+import "./index.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPlateWheat,
+  faClock,
+  faStarHalf,
+  faStar,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Recipe = () => {
   const { id } = useParams();
@@ -19,7 +29,6 @@ const Recipe = () => {
       .request(options)
       .then((response) => {
         setRecipe(response.data);
-        console.log(response.data);
       })
       .catch((error) => {
         console.error(error);
@@ -30,49 +39,62 @@ const Recipe = () => {
     <>
       <MenuHeader />
       <LateralMenu />
-      <main
-        className="recipe-container"
-        style={{ marginLeft: "240px", width: "87%" }}
-      >
-        <div className="recipe-content">
-          <img src="" alt="recipe-photo" />
-          <h3>{recipe?.amount} Porção</h3>
-          <h3>{recipe?.timeToDo}</h3>
+      <main className="recipe-container">
+        <div className="recipe-content basic-info">
+          <img src={plate} alt="recipe-photo" />
+          <h1 className="title">{recipe?.title} </h1>{" "}
+          <div className="rate">
+            <FontAwesomeIcon className="icon-rate" icon={faStar} />{" "}
+            <h3>4,9</h3>
+          </div>
+          <hr />
+          <div className="infos">
+            <div className="info">
+              <FontAwesomeIcon className="icon" icon={faPlateWheat} />{" "}
+              <h3>{recipe?.amount} Porção</h3>
+            </div>
+            <div className="info">
+              <FontAwesomeIcon className="icon" icon={faClock} />{" "}
+              <h3>{recipe?.timeToDo}</h3>
+            </div>
+          </div>
+          <div className="buttons">
+            <CommonButton
+              label={"Save Recipe"}
+              bgColor={"#eb1d36"}
+              fontColor={"white"}
+              fontSize={16}
+              shadow={true}
+            />
 
-          <CommonButton
-            label={"Save Recipe"}
-            bgColor={"#eb1d36"}
-            fontColor={"white"}
-            fontSize={16}
-            shadow={true}
-          />
-
-          <CommonButton
-            label={"I made it"}
-            bgColor={"#eb1d36"}
-            fontColor={"white"}
-            fontSize={16}
-            shadow={true}
-          />
+            <CommonButton
+              label={"I made it"}
+              bgColor={"#eb1d36"}
+              fontColor={"white"}
+              fontSize={16}
+              shadow={true}
+            />
+          </div>
         </div>
 
-        <div className="recipe-content">
-          <h1>{recipe?.title}</h1>
-          <hr />
-
+        <div className="recipe-content ingredients">
           <div className="ingredients-list">
-            <h2>Ingredients</h2>
+            <h1>Ingredients list</h1>
+            <hr />
             <ul>
-              <div
-                dangerouslySetInnerHTML={{ __html: recipe?.ingredients }}
-              ></div>
+              <div dangerouslySetInnerHTML={{ __html: recipe?.ingredients }} />
             </ul>
           </div>
         </div>
+        <hr className="separator" />
         <div className="recipe-content">
           <div className="how-to-do">
-            <h2>How to do</h2>
-            <div dangerouslySetInnerHTML={{ __html: recipe?.howToDo }}></div>
+            <h1>How to do</h1>
+            <hr />
+            <div
+              className="how-to-do-content"
+              dangerouslySetInnerHTML={{ __html: recipe?.howToDo }}
+            />
           </div>
         </div>
       </main>

@@ -6,11 +6,14 @@
   padding: 1rem;
   position: relative;
   border-radius: 22px;
-  background: #E6D0AF;
+  background: #ebf5fa;
+  -webkit-box-shadow: 10px 7px 30px -7px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 10px 7px 30px -7px rgba(0, 0, 0, 0.76);
+  box-shadow: 10px 7px 30px -7px rgba(0, 0, 0, 0.76);
   margin: 3rem;
   cursor: pointer;
 
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .recipe-card-container p {
