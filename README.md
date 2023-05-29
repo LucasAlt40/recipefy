@@ -1,13 +1,13 @@
 # RecipeFy Documentation
 
-- [📷 Screenshots](#screenshots)
-- [🇺🇸 English](#English)
-- [🇧🇷 Português](#Portugues)
-- [🤖 How to Run Locally](#how-to-run-locally)
+- [📷 Screenshots](#📷-screenshots)
+- [🇺🇸 English](#english)
+- [🇧🇷 Português](#português)
+- [🤖 How to Run Locally](#🤖-how-to-run-locally)
 
 ## 📷 Screenshots
 
-Add screenshots of your project here to showcase its interface and features.
+![homepage screenshot](./images/screenshot_homepage.png)
 
 ## 🇺🇸 English
 
@@ -18,7 +18,6 @@ The project is built using the following technologies:
 - React.js: a popular JavaScript library for building user interfaces.
 - Vite: a fast and lightweight development build tool for modern web applications.
 - Yarn: a package manager that provides consistent and reliable dependency management.
-- 
 
 ## 🇧🇷 Português
 
@@ -72,8 +71,6 @@ yarn dev
 ```
 
 The application will be available at [http://localhost:5173](http://localhost:5173).
-
-# 
 
 ### Português
 
