@@ -5,19 +5,22 @@ import {
   faPlateWheat,
   faSearch,
   faStar,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import "./index.css";
+import "./index.css"
+import { Link } from "react-router-dom"
 
 const LateralMenu = () => {
   return (
     <div className="lateral-menu-container">
       <div className="lateral-menu-content">
         <h2>Discover</h2>
-        <p>
-          <FontAwesomeIcon className="icon" icon={faHome} /> Home
-        </p>
+        <Link to={"/menu"}>
+          <p>
+            <FontAwesomeIcon className="icon" icon={faHome} /> Home
+          </p>
+        </Link>
         <p>
           <FontAwesomeIcon className="icon" icon={faSearch} /> Browse
         </p>
@@ -38,7 +41,7 @@ const LateralMenu = () => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default LateralMenu;
+export default LateralMenu
