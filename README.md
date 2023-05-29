@@ -1,6 +1,6 @@
 # RecipeFy Documentation
 
-- [🤖 How to Run Locally](#🤖-how-to-run-locally)
+- [🤖 How to Run Locally](#how-to-run-locally)
 
 ## 📷 Screenshots
 
@@ -26,7 +26,7 @@ O projeto é construído utilizando as seguintes tecnologias:
 - <img src="https://vitejs.dev/logo.svg" alt="Vite" width="20px"> Vite: uma ferramenta de desenvolvimento rápida e leve para aplicativos web modernos.
 - <img src="https://avatars.githubusercontent.com/u/22247014?s=200&v=4" alt="Yarn" width="20px"> Yarn: um gerenciador de pacotes que oferece um gerenciamento de dependências consistente e confiável.
 
-## 🤖 How to Run Locally
+## How to Run Locally
 
 ### English
 
