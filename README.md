@@ -18,8 +18,7 @@ The project is built using the following technologies:
 - React.js: a popular JavaScript library for building user interfaces.
 - Vite: a fast and lightweight development build tool for modern web applications.
 - Yarn: a package manager that provides consistent and reliable dependency management.
-
-# 
+- 
 
 ## 🇧🇷 Português
 
