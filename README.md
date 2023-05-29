@@ -115,6 +115,4 @@ Para iniciar o servidor de desenvolvimento e executar o RecipeFy localmente, use
 yarn dev
 ```
 
-A aplicação estará disponível em [http://localhost:5173](http://localhost
-
-:5173).
+A aplicação estará disponível em [http://localhost:5173](http://localhost:5173).
