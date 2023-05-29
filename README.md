@@ -72,7 +72,7 @@ yarn dev
 
 The application will be available at [http://localhost:5173](http://localhost:5173).
 
-### Português (Brasil)
+### 🇧🇷 Português
 
 🚀 Para executar o RecipeFy localmente em sua máquina, siga as etapas abaixo:
 
