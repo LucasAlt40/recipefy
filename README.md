@@ -19,6 +19,8 @@ The project is built using the following technologies:
 - Vite: a fast and lightweight development build tool for modern web applications.
 - Yarn: a package manager that provides consistent and reliable dependency management.
 
+# 
+
 ## 🇧🇷 Português
 
 📖 **RecipeFy** é um projeto de livro de receitas virtual que permite aos usuários criar e pesquisar receitas compartilhadas por outros usuários. Seja para compartilhar suas receitas favoritas ou encontrar novos pratos para experimentar, o RecipeFy fornece uma plataforma para exploração culinária.
@@ -71,6 +73,8 @@ yarn dev
 ```
 
 The application will be available at [http://localhost:5173](http://localhost:5173).
+
+# 
 
 ### Português
 
