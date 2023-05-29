@@ -109,3 +109,33 @@ yarn dev
 ```
 
 A aplicação estará disponível em [http://localhost:5173](http://localhost:5173).
+
+
+
+## How to Contribute
+
+We welcome contributions to RecipeFy! If you'd like to contribute to this project, please follow the guidelines below:
+
+1. 🍴 Fork the repository on GitHub.
+2. 🐑 Clone your forked repository to your local machine.
+3. 🌿 Create a new branch for your feature or bug fix.
+4. 🧪 Make your changes and test them thoroughly.
+5. 💬 Commit your changes with descriptive commit messages.
+6. 🚀 Push your changes to your forked repository.
+7. 🎉 Submit a pull request to the main repository.
+
+We appreciate your contributions and will review your pull request as soon as possible. Thank you for helping to improve RecipeFy!
+
+## Como Contribuir
+
+Nós aceitamos contribuições para o RecipeFy! Se você deseja contribuir com este projeto, siga as diretrizes abaixo:
+
+1. 🍴 Faça um fork do repositório no GitHub.
+2. 🐑 Clone o repositório forked em sua máquina local.
+3. 🌿 Crie um novo branch para a sua funcionalidade ou correção de bug.
+4. 🧪 Faça suas alterações e teste-as minuciosamente.
+5. 💬 Faça o commit das suas alterações com mensagens de commit descritivas.
+6. 🚀 Envie as suas alterações para o seu repositório forked.
+7. 🎉 Envie um pull request para o repositório principal.
+
+Agradecemos suas contribuições e revisaremos o seu pull request o mais breve possível. Obrigado por ajudar a melhorar o RecipeFy!
