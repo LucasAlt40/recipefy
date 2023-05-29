@@ -49,7 +49,7 @@ Make sure you have the following software installed:
 1. Clone this repository to your local machine using the following command:
 
    ```shell
-   git clone https://github.com/your-username/RecipeFy.git
+   git clone https://github.com/LucasAlt40/recipefy.git
    ```
 
 2. Change to the project's directory:
@@ -92,7 +92,7 @@ Certifique-se de ter os seguintes softwares instalados:
 1. Clone este repositório em sua máquina local usando o seguinte comando:
 
    ```shell
-   git clone https://github.com/seu-nome-de-usuario/RecipeFy.git
+   git clone https://github.com/LucasAlt40/recipefy.git
    ```
 
 2. Navegue até o diretório do projeto:
