@@ -1,15 +1,15 @@
 # RecipeFy Documentation
 
 - [📷 Screenshots](#screenshots)
-- [English](#english)
-- [Português (Brasil)](#portuguese-brazil)
-- [How to Run Locally](#how-to-run-locally)
+- [🇺🇸 English](#english)
+- [🇧🇷 Português](#portuguese-brazil)
+- [🤖 How to Run Locally](#how-to-run-locally)
 
 ## 📷 Screenshots
 
 Add screenshots of your project here to showcase its interface and features.
 
-## English
+## 🇺🇸 English
 
 📖 **RecipeFy** is a virtual recipe book project that allows users to create and search for recipes shared by other users. Whether you want to share your favorite recipes or find new dishes to try, RecipeFy provides a platform for culinary exploration.
 
@@ -19,7 +19,7 @@ The project is built using the following technologies:
 - Vite: a fast and lightweight development build tool for modern web applications.
 - Yarn: a package manager that provides consistent and reliable dependency management.
 
-## Português (Brasil)
+## 🇧🇷 Português
 
 📖 **RecipeFy** é um projeto de livro de receitas virtual que permite aos usuários criar e pesquisar receitas compartilhadas por outros usuários. Seja para compartilhar suas receitas favoritas ou encontrar novos pratos para experimentar, o RecipeFy fornece uma plataforma para exploração culinária.
 
@@ -29,7 +29,7 @@ O projeto é construído utilizando as seguintes tecnologias:
 - Vite: uma ferramenta de desenvolvimento rápida e leve para aplicativos web modernos.
 - Yarn: um gerenciador de pacotes que oferece um gerenciamento de dependências consistente e confiável.
 
-## How to Run Locally
+## 🤖 How to Run Locally
 
 ### English
 
