@@ -15,9 +15,9 @@
 
 The project is built using the following technologies:
 
-- React.js: a popular JavaScript library for building user interfaces.
-- Vite: a fast and lightweight development build tool for modern web applications.
-- Yarn: a package manager that provides consistent and reliable dependency management.
+- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React.js" width="20px"> React.js: a popular JavaScript library for building user interfaces.
+- <img src="https://vitejs.dev/logo.svg" alt="Vite" width="20px"> Vite: a fast and lightweight development build tool for modern web applications.
+- <img src="https://avatars.githubusercontent.com/u/22247014?s=200&v=4" alt="Yarn" width="20px"> Yarn: a package manager that provides consistent and reliable dependency management.
 
 ## 🇧🇷 Português
 
@@ -25,9 +25,9 @@ The project is built using the following technologies:
 
 O projeto é construído utilizando as seguintes tecnologias:
 
-- React.js: uma biblioteca JavaScript popular para construir interfaces de usuário.
-- Vite: uma ferramenta de desenvolvimento rápida e leve para aplicativos web modernos.
-- Yarn: um gerenciador de pacotes que oferece um gerenciamento de dependências consistente e confiável.
+- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React.js" width="20px"> React.js: uma biblioteca JavaScript popular para construir interfaces de usuário.
+- <img src="https://vitejs.dev/logo.svg" alt="Vite" width="20px"> Vite: uma ferramenta de desenvolvimento rápida e leve para aplicativos web modernos.
+- <img src="https://avatars.githubusercontent.com/u/22247014?s=200&v=4" alt="Yarn" width="20px"> Yarn: um gerenciador de pacotes que oferece um gerenciamento de dependências consistente e confiável.
 
 ## 🤖 How to Run Locally
 
