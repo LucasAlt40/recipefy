@@ -1,8 +1,5 @@
 # RecipeFy Documentation
 
-- [📷 Screenshots](#📷-screenshots)
-- [🇺🇸 English](#english)
-- [🇧🇷 Português](#português)
 - [🤖 How to Run Locally](#🤖-how-to-run-locally)
 
 ## 📷 Screenshots
