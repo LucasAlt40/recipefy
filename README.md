@@ -2,7 +2,7 @@
 
 - [📷 Screenshots](#screenshots)
 - [🇺🇸 English](#English)
-- [🇧🇷 Português](#Português)
+- [🇧🇷 Português](#Portugues)
 - [🤖 How to Run Locally](#how-to-run-locally)
 
 ## 📷 Screenshots
@@ -72,7 +72,7 @@ yarn dev
 
 The application will be available at [http://localhost:5173](http://localhost:5173).
 
-### 🇧🇷 Português
+### Português
 
 🚀 Para executar o RecipeFy localmente em sua máquina, siga as etapas abaixo:
 
