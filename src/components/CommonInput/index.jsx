@@ -1,10 +1,10 @@
 import "./index.css";
 
-const CommonInput = ({ label, type, placeholder, ...rest }) => {
+const CommonInput = ({ label, type, placeholder, register, required }) => {
   return (
     <div className="input-container">
-      <label htmlFor={type}>{label}</label>
-      <input type={type} placeholder={placeholder} {...rest} />
+      <label>{label}</label>
+      <input type={type} placeholder={placeholder} {...register(label.toLowerCase(), {required})} />
     </div>
   );
 };

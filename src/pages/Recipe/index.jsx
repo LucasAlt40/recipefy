@@ -75,6 +75,7 @@ const Recipe = () => {
               shadow={true}
             />
           </div>
+          <p>Made by <strong>Diana</strong></p>
         </div>
 
         <div className="recipe-content ingredients">

@@ -1,17 +1,22 @@
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom"
+import CommonInput from "../../components/CommonInput"
+import CommonButton from "../../components/CommonButton"
+import { useForm } from "react-hook-form"
 
-import imgBG from "../../assets/signBG.jpg";
-import googleIcon from "../../assets/googleIcon.png";
-import appleIcon from "../../assets/appleIcon.png";
-
-import CommonButton from "../../components/CommonButton";
-
-import "./index.css";
-import { Link } from "react-router-dom";
-import CommonInput from "../../components/CommonInput";
+import imgBG from "../../assets/signBG.jpg"
+import googleIcon from "../../assets/googleIcon.png"
+import appleIcon from "../../assets/appleIcon.png"
+import "./index.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faHeart } from "@fortawesome/free-solid-svg-icons"
 
 const Sign = () => {
+  const { register, handleSubmit } = useForm()
+
+  const onSubmit = (data) => {
+    console.log(data)
+  }
+
   return (
     <>
       <main>
@@ -22,7 +27,7 @@ const Sign = () => {
               It's not just food, it's an <span>experience</span>.
             </h1>
           </div>
-          <form>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-title">
               <div className="logo">
                 <Link to={"/"}>
@@ -37,19 +42,21 @@ const Sign = () => {
               <p>Welcome back! Please enter your details</p>
             </div>
             <div className="fields">
-                <CommonInput
-                  type={"email"}
-                  label={"Email"}
-                  placeholder={"email@example.com"}
-                  htmlFor="email"
-                />
-                <CommonInput
-                  type={"password"}
-                  label={"Password"}
-                  placeholder={"a secret word"}
-                  htmlFor="password"
-                />
-                <p>Forgot password?</p>
+              <CommonInput
+                type={"email"}
+                label={"Email"}
+                placeholder={"email@example.com"}
+                register={register}
+                required
+              />
+              <CommonInput
+                type={"password"}
+                label={"Password"}
+                placeholder={"a secret word"}
+                register={register}
+                required
+              />
+              <p>Forgot password?</p>
             </div>
             <div className="buttons">
               <CommonButton
@@ -60,7 +67,7 @@ const Sign = () => {
                 fontSize={"16px"}
                 width={250}
                 height={50}
-                type="button"
+                type="submit"
               />
 
               <div className="alternatives">
@@ -111,7 +118,7 @@ const Sign = () => {
         </div>
       </main>
     </>
-  );
-};
+  )
+}
 
-export default Sign;
+export default Sign
