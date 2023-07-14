@@ -10,7 +10,7 @@ import "./index.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHeart } from "@fortawesome/free-solid-svg-icons"
 
-const Sign = () => {
+const SignUp = () => {
   const { register, handleSubmit } = useForm()
 
   const onSubmit = (data) => {
@@ -37,30 +37,48 @@ const Sign = () => {
                 </Link>
               </div>
               <h1>
-                Welcome back <FontAwesomeIcon className="icon" icon={faHeart} />
+                Be Welcome! <FontAwesomeIcon className="icon" icon={faHeart} />
               </h1>
-              <p>Welcome back! Please enter your details</p>
+              <p>Please fill the fields to complete your registration</p>
             </div>
             <div className="fields">
               <CommonInput
+                type={"text"}
+                field={"name"}
+                label={"Name"}
+                placeholder={"Auguste Gusteau"}
+                register={register}
+                required
+              />
+              <CommonInput
                 type={"email"}
+                field={"email"}
                 label={"Email"}
                 placeholder={"email@example.com"}
                 register={register}
                 required
               />
               <CommonInput
+                type={"email"}
+                field={"emailConfirm"}
+                label={"Confirm your email"}
+                placeholder={"email@example.com"}
+                preventPaste={true}
+                register={register}
+                required
+              />
+              <CommonInput
                 type={"password"}
+                field={"password"}
                 label={"Password"}
                 placeholder={"a secret word"}
                 register={register}
                 required
               />
-              <p>Forgot password?</p>
             </div>
             <div className="buttons">
               <CommonButton
-                label={"Sign In"}
+                label={"Sign Up"}
                 shadow={false}
                 bgColor={"#eb1d36"}
                 fontColor={"#FFF"}
@@ -78,7 +96,7 @@ const Sign = () => {
 
               <div className="sign-externals-account">
                 <CommonButton
-                  label={"Sign In with Google"}
+                  label={"Sign Up with Google"}
                   icon={<img src={googleIcon} alt="google icon" />}
                   shadow={false}
                   bgColor={"#FFF"}
@@ -90,7 +108,7 @@ const Sign = () => {
                   type="button"
                 />
                 <CommonButton
-                  label={"Sign In with Apple"}
+                  label={"Sign Up with Apple"}
                   icon={
                     <img
                       src={appleIcon}
@@ -111,7 +129,11 @@ const Sign = () => {
             </div>
             <div className="dont-have-account">
               <p>
-                Don't have a account yet? <Link to={'/signup'} ><span>Sign Up</span></Link>
+                Already have an account? So{" "}
+                <Link to={"/sign"}>
+                  <span>Sign In</span>
+                </Link>
+                .
               </p>
             </div>
           </form>
@@ -121,4 +143,4 @@ const Sign = () => {
   )
 }
 
-export default Sign
+export default SignUp
